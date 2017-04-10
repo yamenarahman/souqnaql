@@ -1,0 +1,807 @@
+/*1700*/
+/*Start Global */
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+font-family: 'Cairo', sans-serif;
+}
+body {direction: rtl;}
+/*End Global */
+
+/*Start Navbar*/
+.navbar-default{border-color:rgba(96, 105, 109, 0.42);background: transparent;font-size:40px;height: 85px;padding: 13px;z-index: 19	;border:none}
+nav.sticky {position: fixed;font-size: 24px;line-height: 48px;height: 65px;  width: 100%;padding: 0;background-color:rgba(0, 0, 0, 0.84);}
+.navbar-default .navbar-nav > li > a {height: 65px;line-height: 25px;font-size: 30px;}
+.navbar-default .navbar-nav > li > a.sticky1{line-height: 25px;font-size: 25px;}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+ {background:transparent; }
+.top  {margin-right: 0}
+.top span.glyphicon {top: 3px;right: 2px;font-size: 20px;}
+.navbar-default .navbar-toggle{border-color:#27c4b9}
+.navbar-default .navbar-toggle .icon-bar{background-color:#27c4b9}
+/*Start  Sign Up*/
+.navbar-default .modal-content{background: transparent;-webkit-box-shadow:none;border:none; border:none;}
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+div#main {
+padding-bottom: 5px;
+color: #000;
+position: relative;
+}
+div#main div#signin {
+position: absolute;
+top: 75px;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);
+width: 200px;
+height: 42px;
+overflow: hidden;
+font-size: 19px;
+}
+div#main div#signin h3,
+div#main div#signin h4 { text-align: center; font-weight: 100;}
+div#main div#signin h4 {
+  cursor: pointer;
+  line-height: 30px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #fff;
+}
+div#main div#signin h4:hover { background: rgba(39, 196, 185, 0.6);}
+div#main div#signin h3 { padding: 30px 10px 5px;}
+div#main div#signin h4#firm {
+color: #26bfb4;
+cursor: default;
+width: 155px;
+margin: auto;
+line-height: initial;
+background: #fff !important;
+border: 2px solid #000;
+position: relative;
+}
+div#main div#signin h4#firm:after,
+div#main div#signin h4#firm:before {
+content: "";
+position: absolute;
+top: 50%;
+left: -50px;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+width: 50px;
+height: 2px;
+background: -webkit-linear-gradient(left, #fff, #000);
+background: linear-gradient(to right, #fff, #000);
+}
+div#main div#signin h4#firm:before {
+left: 100%;
+background: -webkit-linear-gradient(right, #fff, #000);
+background: linear-gradient(to left, #fff, #000);
+}
+div#main > h3 { text-align: center;font-weight: 100;padding: 10px;}
+div#main form input {
+display: block;
+width: 70%;
+margin: 20px auto;
+background: transparent;
+border: none;
+border-bottom: 1px solid #aaa;
+line-height: 40px;
+color: #888;
+font-size: 19px;
+}
+div#main form input:focus {outline: none;color: #000;border-color: #000;}
+div#main form input[type="submit"] {
+padding: 0 5px;
+font-size: 1.3em;
+text-align: center;
+cursor: pointer;
+line-height: 50px;
+border: none;
+font-size: 19px;
+}
+.show 
+{ height: 100% !important;width: 100% !important;background: #fff !important; top: 0 !important;}
+.navbar-default .modal-body {z-index:999}
+.modal-backdrop { z-index: 0}
+/*End Sign Up*/
+
+/*End Navbar*/
+
+/*Start SlideR-show*/
+.atlob-now
+{
+position: absolute;right: 44%;top: 50%;left: 50%;height: 50px;}
+.btn-default:hover{background:rgb(42, 188, 178)}
+.slider-show {position: relative; background: #464646;}
+.slider-show .item {height: 550px;}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {min-height: 600px}
+.slider-show .carousel-caption .h1 {padding-bottom: 200px;}
+.slider-show .start-intro
+{ font-size: 60px;display: inline-block;padding-bottom: 10px;}
+.slider-show .left-intro {display: inline-block;padding-right: 215px;padding-top: 4px;}
+.slider-show .end-intro {text-align: left;display: inline-block;font-weight: bold}
+.btn-slider {font-size: 19px;font-weight: bold;}
+.btn-slider:hover {color:#000;}
+.carousel-indicators {right: 12%}
+.modal-content {color:#000;}
+
+/*******************************APP*************************************************************/
+.modal-backdrop {z-index:0;}
+.slider-show .modal-footer .btn {float: left;}
+.slider-show .modal-title {
+width: 250px;
+height: 44px;
+line-height: 44px;
+text-align: center;
+font-size: 26px;
+margin: 0 auto;
+position: absolute;
+top: -10px;
+left: 0;
+right: 0;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.slider-show .modal-header {border-bottom: 0;}
+.slider-show .intro {
+display: block;
+margin-top: -12px;
+font-size: 19px;
+font-weight: bold;
+width: 200px;
+margin: -12px auto 0;
+padding: 10px 5px;
+border-radius: 10px;
+}
+.slider-show .text-intro-area {width: 100%;height: 60px;}
+.slider-show .modal-footer {padding: 10px;height: 220px;border-top: none;}
+.spechial-form .form1 h5 {margin-bottom: -10px;font-size: 18px;}
+.ways {font-size: 18px;    margin-bottom: 40px;}
+.span-spechial {display: inline-block;padding-left: 10px;margin-top: 70px;margin-bottom: 12px;}
+.span-spechial1 {display: inline-block;padding-left: 24px;}
+.area-way {display: inline-block;width: 100%;margin-top: 14px;height: 60px; }
+.input-info {display: block;width: 75%;margin-top: 10px;height: 40px;}
+.form select {display: inline-block;margin-bottom: 7px;margin-top: 15px;}
+.spechial-form .form1 .input {margin-bottom: 6px;}
+.slider-show .modal-footer .btn-sent 
+{float: none;margin-top: 20px;margin-left: 198px;font-size: 20px;font-weight: bold;}
+/*******************************APP*******************************/
+.carousel-indicators {right:150px;}
+.carousel-indicators li {border:1px solid #fff;background: #fff;width:9px;height: 9px;}
+.slider-show .slider-links {background: #464646;min-height: 200px;}
+.slider-show .slider-links .border {border-left: 1px solid #5d5d5d;}
+.slider-show .links {padding-top: 40px;padding-bottom: 42px;}
+.slider-show .links i {padding-top: 10px;}
+/*End SLIDER-SHow*/
+
+/*Start why-us*/
+.why-us {background: #ececec;min-height: 400px;margin-bottom: 70px;position: relative;}
+.why-us .h1 {margin-top: 0;padding-top: 55px;position: relative;}
+.why-us .h1:after
+{
+content: "";
+display: block;
+position: relative;
+top: -8px;
+left: 46%;
+right: 63%;
+width: 57px;
+border-bottom: 1px solid #343434;
+}
+.why-us .h1:before
+{
+content: "";
+display: block;
+position: relative;
+top: 27px;
+left: 53%;
+right: 33%;
+width: 57px;
+border-bottom: 1px solid #343434;
+}
+.why-us h3:after
+{
+content: "";
+display: block;
+position: relative;
+top: 9px;
+left: 51%;
+right: 0%;
+width: 47px;
+border-bottom: 1px solid #27c4b9;
+}
+.why-us .edit {display: inline-block;margin-top: 23px;margin-right: 59px;font-size: 27px;}
+.why-us h3 { font-size: 21px;position: relative;}
+p {margin-bottom: 5px;}
+.info-person .fa
+{
+padding-right: 5px;
+display: inline-block;
+border-radius: 50%;
+border: 1px solid;
+padding: 3px;
+margin-top: 12px;
+}
+.why-us .marg-top {margin-top:35px;}
+.why-us .marg-bottom {margin-bottom: 70px;}
+/*End why-us*/
+
+/*Start How To Used*/
+.how-used {margin-bottom: 70px;}
+.how-used .h1 {position: relative;font-size: 32px;}
+.how-used .h1:after {
+content: "";
+display: block;
+position: relative;
+top: -8px;
+left: 46%;
+right: 64%;
+width: 57px;
+border-bottom: 1px solid #343434;
+}
+.how-used .h1:before {
+content: "";
+display: block;
+position: relative;
+top: 27px;
+left: 56%;
+right: 31%;
+width: 57px;
+border-bottom: 1px solid #343434;
+}
+.how-used .info-person {margin-top: 30px;}
+.how-used .info-person h4 {font-size: 26px;}
+.how-used .info-person .img-responsive {width:57%; margin:20px auto 0;}
+.how-used .info-person span {
+display: inline-block;
+width: 285px;
+height: 50px;
+line-height: 44px;
+font-size: 25px;
+border-radius: 4px;
+margin: 0 auto;
+margin-bottom: 20px;
+margin-top: -7px;
+}
+.how-used ul.text-left {line-height: 2.1}
+.how-used .text-left li {font-size: 17px;}
+.how-used .text-left li a {font-weight: bold;font-size: 18px;cursor: pointer;}
+.how-used .info-person .blocki { display: block; margin-right: 142px; }
+.bt-spechial {
+display: inline-block;
+width: 248px;
+height: 50px;
+line-height: 44px;
+font-size: 25px;
+border-radius: 4px;
+margin: 0 auto;
+line-height: 50%;
+margin-top: -14px;
+}
+.spechial-icon 
+{position: absolute;font-size: 200px;top: 1809px;right: -18px;color: rgba(179, 179, 179, 0.48); }
+.modal-body a .down-link {
+padding-right: 5px;
+display: inline-block;
+padding: 3px;
+margin-top: 12px;
+border:none;
+FONT-SIZE: 100px;
+color:#eee; }
+/*End How TO used*/
+
+/*Start About-us*/
+.about-us{
+background: url("../images/about-section.png") center center fixed no-repeat;
+min-height: 500px; position: relative}
+.about-us .about-intro h3
+{ margin-top: 70px; margin-bottom: 30px; font-size: 40px; font-weight: bold;}
+.about-us .about-intro .lead {font-size: 24px;line-height: 2}
+/*End About-us*/
+
+/*Start Contact-us*/
+.form-control::-moz-placeholder {color:#000000}
+.form-control:-ms-input-placeholder  {color:#000000}
+.form-control::-webkit-input-placeholder  {color:#000000}
+.hero--intro {background: url("../images/contact.png") fixed}
+.contact {border-bottom: 0;}
+.contact h3{margin-top:60px;margin-bottom:60px;font-size:40px;text-align: justify;font-weight: bold}
+.contact input{
+width: 99%;
+margin-bottom: 30px;
+display: inline-block;
+height: 45px;
+padding-right: 4px;
+background: rgba(255, 255, 255, 0.38);
+border: 1px solid #fff;
+}
+.contact textarea{
+width:100%;
+margin:auto;
+display: block;
+height: 190px;
+margin-bottom: 20px;
+background:  rgba(255, 255, 255, 0.38);
+border: 1px solid #fff;
+}
+.contact .btn-default {width: 200px; height: 65px;font-size: 30px; margin-bottom: 40px; }
+.contact-info { border:1px solid #eee; border-radius: 20px; padding: 20px;margin-right: 7px;}
+button.bt-spechial { font-size: 23px; width: 275px; line-height: 20px; margin-right: 10px;}
+button.btn-close {float: right; font-size: 25px; padding: 7px 9px;}
+button.bt-spechial:hover {background: #fff;    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.contact-form { background: url('../img/contact-us.jpg') repeat-x center;}
+.contact-form form { position: relative;}
+.contact-form .form-control {
+background-color: transparent;
+margin-bottom: 20px;
+padding: 20px;
+border-width: 2px;
+}
+.contact-form .form-control:focus { border: 2px solid #FEE600;}
+.contact-form .form-control:focus { background: rgba(255, 255, 255, 0.1);}
+.commands { text-align: center;}
+.wrapper { height: auto !important; height: 100%; margin: 0 auto; overflow: hidden;}
+a { text-decoration: none;}
+h1, h2 { width: 100%; float: left;}
+h1 {
+margin-top: 100px;
+text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+margin-bottom: 5px;
+font-size: 70px;
+letter-spacing: -4px;
+}
+h2 {
+color: #5F7591;
+font-weight: bold;
+text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+margin-top: 0;
+margin-bottom: 10px;
+}
+.pointer { color: #9b59b6;font-family: 'Pacifico', cursive;font-size: 30px;margin-top: 15px;}
+pre { margin: 80px auto;}
+pre code {
+padding: 35px;
+border-radius: 5px;
+font-size: 15px;
+background: rgba(0,0,0,0.1);
+border: rgba(0,0,0,0.05) 5px solid;
+max-width: 500px;
+}
+.main { float: left;width: 100%; margin: 0 auto;}
+.main h1 {
+padding:20px 50px;
+float: left;
+width: 100%;
+font-size: 60px;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+font-weight: 100;
+margin: 0;
+padding-top: 25px;
+font-family: 'Pacifico';
+letter-spacing: 2px;
+}
+.main h1.demo1 { background: #1ABC9C;}
+.reload.bell {
+font-size: 12px;
+padding: 20px;
+width: 45px;
+text-align: center;
+height: 47px;
+border-radius: 50px;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+}
+.reload.bell #notification { font-size: 25px;line-height: 140%;}
+.reload, .btn{
+display: inline-block;
+border: 4px solid #A2261E;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background: #CC3126;
+display: inline-block;
+line-height: 100%;
+padding: 0.7em;
+text-decoration: none;
+width: 100px;
+line-height: 140%;
+font-size: 17px;
+font-family: open sans;
+font-weight: bold;
+}
+.reload:hover{ background: #A2261E;}
+.btn { width: 200px;border: none;margin-left: 10px;background: rgb(42, 188, 178);}
+.clear { width: auto;}
+.btn:hover, .btn:hover { color: #000;}
+.btns { width: 410px; margin: 50px auto;}
+.credit {
+font-style: italic;
+text-align: center;
+padding: 10px;
+margin: 0 0 40px 0;
+float: left;
+width: 100%;
+}
+.credit a { color: #ccc;text-decoration: none;font-weight: bold;}
+.back {
+position: absolute;
+top: 0;
+left: 0;
+text-align: center;
+display: block;
+padding: 7px;
+width: 100%;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+background: rgba(0, 0, 0, 0.65);
+font-weight: bold;
+font-size: 13px;
+}
+.back:hover { background: rgba(0, 0, 0, 0.85);}
+.bl_form { margin: 0px 0;}
+.bl_form input {
+padding-top: 20px;
+background: rgba(255,255,255,0.10);
+box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+border: none;
+color: white;
+padding: 10px 15px;
+border-radius: 25px;
+font-size: 16px;
+outline: none;
+}
+.lb_wrap .lb_label.top, .lb_wrap .lb_label.bottom 
+{ left: 250px !important; top: -12px !important; width: 30% }
+.lb_wrap .lb_label.left { left: 12px;}
+.lb_label { font-weight: bold; color: #999;}
+.commands .btn {width: 200px;border: none;margin-left: 10px;background: #fff;font-size: 20px}
+/*End Contact-us*/
+
+/*Start Footer*/
+.footer {background: #323232;min-height: 300px;position: relative;padding-top: 50px;}
+.footer .footer-intro h5 {font-size: 28px;font-weight: bold;margin-bottom: 25px;}
+.footer .footer-intro .lead {font-size: 18px}
+.details
+{height: 200px;padding-top: 20px;text-align: -webkit-right;padding-right: 70px;border-radius: 20px;}
+.details .spea {font-size: 20px;}
+.footer .link-social {font-size: 22px; display: inline-block;margin-top: 10px; margin-right: 100px;}
+.footer .conact {padding-right: 90px;}
+.footer .conact .fa-lg {  margin-left: 5px;}
+.footer .conact li {font-size: 18px;line-height: 1.7}
+.footer .conact li a:hover {text-decoration: none;}
+.footer .conact h6 {font-size: 21px;}
+.footer .down-app i {margin: 5px;}
+.copy {background: #3c3c3c;font-size: 20px;min-height: 80px;line-height: 70px;position: relative;}
+.footer .link-card {margin-top: 45px}
+.footer .link-card img {display:inline-block; margin-left:7px;}
+.copy:after
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 8px;
+background: #c4e17f;
+border-radius: 5px 5px 0 0;
+background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4); 
+}
+
+/*End Footer*/
+
+/****** Start Media  *******/
+/*Phone And Tablet*/
+@media (max-width: 767px)
+{
+	.navbar-default .navbar-toggle {float: right;margin-right: 10px; margin-top: 12px;}
+	.slider-show .start-intro {font-size: 40px;text-align: center;}
+	.slider-show .left-intro {padding-right: 0; font-size: 36px;}
+	.slider-show .modal-footer {height: 120px;}
+	.area-way { width: 89%;}
+	.slider-show .modal-footer .btn-sent {margin-left: 100px;}
+	.slider-show .btn-slider {margin-right: -60px;}
+	.nav {margin-right: 2px;background: #3c3c3c;}
+	.btn {    right: 27%;top: 40%;}
+	.top {margin-right: 0px;margin-top: 7px;}
+	.slider-show .slider-links .border {border-bottom: 1px solid #5d5d5d;}
+	 .h1 {font-size: 26px;}
+	.why-us{margin-bottom: 30px;}
+	.why-us .h1:before
+	{
+	content: "";
+    display: block;
+    position: relative;
+    top: 16px;
+    left: 44%;
+    right: 19%;
+    width: 54px;
+    border-bottom: 1px solid #343434;
+	}
+	.why-us .h1:after
+	{top: -12px;left: 51%;right: 71%;width: 54px;}
+	.why-us .marg-bottom {margin-bottom: 10px;}
+	.spechial-icon{display: none}
+	.span-spechial{margin-top: 56px;}
+	.how-used .h1 {font-size: 26px;margin-bottom: 30px;}
+	.how-used .h1:before{top: 16px;left: 23%;right: 2%;width: 50px;}
+	.how-used .h1:after {top: -8px;left: 46%;right: 85%;width: 50px;}
+	.how-used .info-person .blocki {margin-right: 86px;}	
+	.about-us{padding-bottom: 28px;	}
+	.contact{padding-bottom: 30px;}
+	.footer-intro {margin-bottom: 30px;}
+	.details{margin-bottom: 30px;}
+	.footer .down-app i{margin-right: 36px; margin-bottom: 30px;}
+	.footer .conact li a {padding-bottom: 10px;display: inline-block;}
+	.copy {line-height: 43px;}
+	.copy .text-left { text-align: center;padding-top: 16px;}
+	.why-us .marg-top { padding-bottom: 30px;}
+}
+@media (max-width: 800px)
+{
+	.how-used .info-person .img-responsive {width: 40%}
+	.how-used .info-person .blocki {     margin-right: 100px;}
+	button.bt-spechial{ width: 272px; margin-top: -45px; height: 55px}
+}
+@media (max-width: 414px)
+{
+	.navbar-default .navbar-toggle{margin-right: 30px;  margin-top: 16px;}
+	.how-used .info-person .img-responsive{width:60%}
+	.how-used .info-person .blocki{margin-right: 80px}
+	.h1 {font-size: 20px;}
+	.why-us .h1:before {display: none}
+	.why-us .h1:after {display: none}
+	.why-us .edit {margin-top: 24px;margin-right: 43px}
+	.how-used .h1 {font-size: 24px;}
+	.how-used .h1:before {display: none}
+	.how-used .h1:after {display: none}
+	.lb_wrap .lb_label.top, .lb_wrap .lb_label.bottom
+	{ left: 170px !important; top: -12px !important; width: 60%}
+	.input-info {width: 65%; margin-top: 15px}
+	.slider-show .text-intro-area {margin-top: 13px;}
+	.area-way {width:82%;}
+	.copy p {font-size: 15px;}
+	.footer .conact h6 {
+    font-size: 18px;font-weight: bold;color:#62c2e4}
+	button.bt-spechial{width:270px; height: 50px;margin-top: -50px;}
+	.how-used .info-person h4{font-size: 30px;}
+}
+
+/* Small Screen */
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.slider-show .slider-links .border {border-left: none;border-bottom: 1px solid #5d5d5d}
+	.why-us .h1:before {top: 21px;left: 53%;right: 24%;}
+	.why-us .h1:after{top: -17px;left: 46%;right: 69%}
+	.copy {padding-top: 25px;line-height: 40px;}
+	.text-left,
+	.text-right {text-align: center}
+	.footer-intro {margin-bottom: 30px;}
+	.details{margin-bottom: 20px}
+	.footer .conact {margin-bottom: 25px}
+	.lb_wrap .lb_label.top, .lb_wrap .lb_label.bottom
+	{ left: 100px !important; top: -12px !important; width: 60%}
+	.contact {padding-bottom: 20px;}
+	.how-used .h1  {font-size: 32px;margin-bottom: 23px;}
+	.how-used .h1:before {top: 20px;right: 20%;}
+	.how-used .h1:after {top: -15px;left: 46%;right: 72%}
+	.how-used .info-person h4{font-size: 30px}
+	.img-responsive {max-width: 40%}
+	.how-used .info-person span {width: 295px;}
+	.how-used .text-left {text-align: right;}
+	.how-used .info-person .blocki{margin-right: 250px;}
+	button.bt-spechial {width: 310px;margin-top: -9px;height: 60px}
+	.slider-show .text-intro-area {width: 80%;}
+	.area-way {width:75%;}
+	.why-us .edit {margin-right: 50px}
+	.spechial-icon {top: 2118px;right: 29px;}
+	.details{padding-right: 21px;}
+}
+/* Medium Screen */
+@media (min-width:992px) and (max-width: 1199px)
+{
+	.why-us .h1:before{right:28%;}
+	.why-us .h1:after {right:67%;}
+	.why-us .edit{margin-right: 39px;}
+	.how-used .h1:after{ top: -11px;right: 67%;}
+	.how-used .h1:before {top: 24px;right: 27%}
+	.how-used .info-person .img-responsive{ width: 49%}
+	.how-used .tab .img-responsive { width:53%;}
+	.how-used .h1:before {right: 26%;}
+	.how-used .h1:after { right:68%}
+	.hero { min-height: 600px}
+	.slider-show .text-intro-area {  width: 86%; margin-top: 13px;}
+	.area-way { display: inline-block; width: 98%; margin-top: 27px;}
+}
+/***** End Media  *****/
+
+/*Start Scroll Top*/
+.scroll_top
+{
+width: 29px;
+height: 29px;
+text-align: center;
+position: fixed;
+right: 15px;
+bottom: 10px;
+z-index: 99999;
+cursor: pointer;
+line-height: 25px;
+display: none;
+border-radius: 4px;
+}
+.scroll-top:hover {background:#FFF;}
+/*End Scroll Top*/
+
+/*Start Our Grouping System*/
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.slider-show .end-intro,
+.spechial-form .form1 h5,
+.ways,
+.slider-show .links i,
+.why-us h3,
+.why-us a,
+.how-used .info-person h4,
+.footer .conact li a:hover,
+.footer .down-app i:hover,
+.scroll-top:hover,
+.why-us .edit,
+.info-person .fa,
+.how-used .text-left li a,
+.modal-body a .down-link:hover,
+.contact .btn-default,
+.commands .btn,
+.footer .footer-intro h5,
+.details .spea
+{
+color:#27c4b9
+}
+div#main form input[type="submit"],
+div#main form input[type="submit"]:hover,
+.show h4,
+.show h4:hover,
+.btn-slider,
+.btn-slider:hover,
+.slider-show .modal-title,
+.carousel-indicators .active,
+.how-used .info-person span,
+.bt-spechial,
+button.bt-spechial,
+.scroll_top,
+.slider-show .modal-footer .btn-sent:hover,
+button.btn-close:hover
+{
+background: #27c4b9 !important;
+}
+.hero--intro,
+.about-us,
+.contact-form 
+{
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+}
+.slider-show .modal-footer .btn,
+.slider-show .intro,
+.carousel-indicators .active,
+button.btn-close,
+button.bt-spechial:hover,
+.details
+{
+border: 1px solid #22d3c6;
+}
+.navbar-default .navbar-nav > li > a,
+div#main div#signin h4,
+div#main form input[type="submit"],
+.slider-show,
+.btn-slider,
+.slider-show .modal-footer .btn,
+.slider-show .modal-title,
+.scroll_top,
+.copy,
+.slider-show .slider-links,
+.how-used .info-person span,
+.bt-spechial,
+.about-us,
+.contact,
+.contact h3,
+button.btn-close,
+.contact-form .form-control,
+.contact-form .heading,
+h1,
+.reload,
+.btn,
+.credit,
+.back,
+.lb_label.active,
+.footer,
+.footer .link-social i,
+.footer .down-app i,
+.footer .conact li a
+{
+color:#fff
+}
+.navbar-default,
+.scroll_top,
+.footer .down-app i,
+.footer .conact li a,
+.back,
+.modal-body a .down-link,
+.btn-slider,
+.navbar-default .navbar-nav > li > a,
+div#main form input,
+div#main div#signin h4,
+div#main div#signin,
+button.bt-spechial
+{
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-ms-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+/*End Our Grouping System*/
+
+/*Start Font-awesome*/
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+* -------------------------- */
+@font-face {
+font-family: 'FontAwesome';
+src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+.fa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg { font-size: 1.33333333em;line-height: 0.75em;vertical-align: -15%}
+.fa-2x {font-size: 2em;}
+.fa-3x {font-size: 3em;}
+.fa-4x {font-size: 4em}
+.fa-5x {font-size: 5em}
+.fa-fw { width: 1.28571429em; text-align: center}
+.fa-lightbulb-o:before {content: "\f0eb"}
+.fa-gear:before,
+.fa-cog:before {content: "\f013"}
+.fa-chevron-up:before {content: "\f077"}
+.fa-chevron-down:before {content: "\f078"}
+.fa-external-link:before {content: "\f08e"}
+.fa-link:before { content: "\f0c1";}
+.fa-tachometer:before {content: "\f0e4"}
+.fa-credit-card:before {content: "\f09d"}
+.fa-handshake-o:before {content: "\f2b5"}
+.fa-headphones:before {content: "\f025"}
+.fa-line-chart:before {content: "\f201"}
+.fa-long-arrow-left:before {content: "\f177"}
+.fa-apple:before {content: "\f179"}
+.fa-android:before {content: "\f17b"}
+.fa-facebook:before {content: "\f09a"}
+.fa-twitter:before {content: "\f099"}
+.fa-google-plus:before { content: "\f0d5"}
+.fa-paper-plane-o:before {content: "\f1d9"}
+/*End Font-Awesome*/
