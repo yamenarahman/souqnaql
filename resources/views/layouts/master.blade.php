@@ -12,8 +12,10 @@
 
     <!-- Styles -->
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
-    <link rel="stylesheet" href="/css/bootstrap-arabic.min.css"/>
-    <link rel="stylesheet" href="/css/mystyle.css"/>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-arabic.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-arabic-theme.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}"/>
     <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -39,7 +41,7 @@
 
                         <!-- Branding Image -->
                         <a href="{{ url('/') }}">
-                            <img src="/images/souq-naql-car-sm.png" alt="logo">
+                            <img src="/img/souq-naql-car-sm.png" alt="logo">
                         </a>
                     </div>
 
@@ -89,17 +91,15 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="/js/jquery.label_better.js"></script>
-    <script src="/js/mycustem.js"></script>
+    <!-- <script src="{{ asset('js/app.js') }}"></script> -->
+    <!-- scripts-->
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap-arabic.min.js') }}"></script>
+    <script src="{{ asset('js/smoothscroll.js') }}"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
     <script>
-        $("input.label_better, textarea.label_better").label_better({
-            animationTime: 500,
-            easing: "bounce",
-            offset: 0,
-            position: "top",
-            hidePlaceholderOnFocus: true
-        });
+        new WOW().init();
     </script>
 </body>
 </html>
